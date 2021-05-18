@@ -30,3 +30,13 @@ Tính năng chính:
 - Quản lý phân quyền
 
 - Thống kê (Thành viên, lượt đọc bài)
+
+Cách cài đặt:
+
+- Cài xampp
+
+- Pull repo vào thư mục htdocs
+
+- Tạo database "article_management"
+
+- Import file "article_management.sql" vào database
