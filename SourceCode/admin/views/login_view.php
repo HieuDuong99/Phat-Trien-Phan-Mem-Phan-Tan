@@ -44,7 +44,7 @@
                 if (username == "" || password == "") {
                     $('#username').addClass('is-invalid');
                     $('#password').addClass('is-invalid');
-                    $(".login-box").append('<div class="alert alert-danger alert-dismissible fade show" role="alert">Tài khoản và mật khẩu không được để rỗng<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                    $(".login-box").append('<div class="alert alert-danger alert-dismissible fade show" role="alert">Tài khoản và mật khẩu không được để rỗng !<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
                     return false;
                 }
 
