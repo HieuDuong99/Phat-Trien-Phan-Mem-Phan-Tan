@@ -19,11 +19,11 @@ require_once 'partials/header_view.php';
           <div class="row">
             <div class="form-group col-md-6">
               <label for="name">Tên danh mục:</label>
-              <input type="text" class="form-control" id="name" name="name" value="<?= $this->item('name') ?>">
+              <input type="text" class="form-control" id="name"  name="name" value="<?= $this->item('name') ?>">
               <div class="invalid-feedback"></div>
             </div>
             <div class="form-group col-md-6">
-              <label for="status">Danh mục chính:</label>
+              <label for="status">Danh mục chính :</label>
               <select id="inputState" class="form-control" name="parent_id">
                 <option value=0 selected>Không</option>
               	<?php foreach ($context['categories'] as $category): ?>
