@@ -98,7 +98,7 @@ require_once 'partials/header_view.php';
                                 <?php if ($this->auth->user->id == $article->author->id && $article->drafft): ?>
                                 <form action="?cn=delete_article" method="POST">
                                   <input type="hidden" name="delete_id" value="<?= $article->id ?>">
-                                  <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Bạn có chắc muốn xóa?')"><i class="fas fa-trash-alt"></i></button>
+                                  <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Bạn có chắc muốn xóa ?')"><i class="fas fa-trash-alt"></i></button>
                                 </form>
                                 <?php endif ?>
     		                      </div>
