@@ -1,0 +1,77 @@
+.main-sidebar {
+	width: 250px;
+	flex-shrink: 0;
+	transition: width 0.7s;
+}
+.navbar-nav {
+	width: 100%;
+}
+.main-body {
+	overflow-x: hidden;
+}
+.content-wrapper {
+	min-height: calc(100vh - 56px);
+	min-width: 100%;
+	flex-basis: calc(100% - 250px);
+	flex-grow: 1;
+	overflow: hidden;
+}
+.main-content.overflow {
+	overflow: auto;
+}
+.collapsing {
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+.collapse.myopen {
+	animation: show ease 0.7s;
+	overflow: hidden;
+}
+.collapse.myclose {
+	display: block;
+	animation: close ease 0.7s;
+	overflow: hidden;
+}
+.collapse.myopen .sidebar, .collapse.myclose .sidebar {
+	width: 250px;
+}
+.logo-lg {
+	display: none;
+}
+.breadcrumb-item:not(.active), .cursor-pointer {
+	cursor: pointer;
+}
+
+aside .nav-link:hover {
+	cursor: pointer;
+}
+
+@keyframes show {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 250px;
+	}
+}
+@keyframes close {
+	0% {
+		width: 250px;
+	}
+	100% {
+		width: 0px;
+	}
+}
+
+@media (min-width: 576px) {
+	.logo-mini {
+		display: none;
+	}
+	.logo-lg {
+		display: block;
+	}
+	.content-wrapper {
+		min-width: auto;
+	}
+}
